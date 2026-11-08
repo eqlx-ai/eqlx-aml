@@ -1,6 +1,6 @@
 # eqlx-aml
 
-[![CI](https://github.com/eqlx-ai/eqlx-aml/actions/workflows/ci.yml/badge.svg)](https://github.com/eqlx-ai/eqlx-aml/actions/workflows/ci.yml) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/eqlx-aml)](https://pypi.org/project/eqlx-aml/) [![CI](https://github.com/eqlx-ai/eqlx-aml/actions/workflows/ci.yml/badge.svg)](https://github.com/eqlx-ai/eqlx-aml/actions/workflows/ci.yml) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 Find **money-laundering patterns** in transfer data: fan-out, fan-in, gather-scatter, scatter-gather,
 loops, pass-through and structuring. Every alert is an exact, written rule applied to the transfers you
@@ -24,8 +24,7 @@ the rows to prove it. The agent decides what to look at; the tool does the count
 ## Install
 
 ```bash
-pip install "eqlx-aml[mcp]"   # once released on PyPI; until then:
-pip install "eqlx-aml[mcp] @ git+https://github.com/eqlx-ai/eqlx-aml"
+pip install "eqlx-aml[mcp]"
 ```
 
 Python 3.10+. The core needs only NumPy; `[mcp]` adds the MCP server.
