@@ -1,0 +1,25 @@
+name: Bug report
+description: A detector is wrong, a file is read wrongly, or something fails.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "**Do not attach real transaction data.** Describe the structure, or reproduce it with `eqlx_aml.synthetic`."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran (command or code, parameters), what you expected, what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Minimal transfers
+      description: A handful of made-up transfers that show the problem (time, source, target, amount).
+      render: csv
+  - type: input
+    id: version
+    attributes:
+      label: Versions
+      description: eqlx-aml and Python versions.

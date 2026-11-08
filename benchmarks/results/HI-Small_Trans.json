@@ -1,0 +1,303 @@
+{
+  "data": "HI-Small_Trans.csv",
+  "transfers": 5078345,
+  "accounts": 515088,
+  "laundering_transfers": 5177,
+  "attempts_by_type": {
+    "BIPARTITE": 49,
+    "CYCLE": 54,
+    "FAN-IN": 40,
+    "FAN-OUT": 48,
+    "GATHER-SCATTER": 51,
+    "RANDOM": 41,
+    "SCATTER-GATHER": 44,
+    "STACK": 43
+  },
+  "attempts_matched_rows": 370,
+  "runs": [
+    {
+      "pattern": "fan_out",
+      "params": {},
+      "seconds": 2.7,
+      "alerts": 26097,
+      "alerts_on_laundering_accounts": 545,
+      "attempts": 48,
+      "detected": 27,
+      "eligible_attempts": 27,
+      "eligible_detected": 27,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "fan_out",
+      "params": {
+        "min_counterparties": 3
+      },
+      "seconds": 3.2,
+      "alerts": 54851,
+      "alerts_on_laundering_accounts": 1392,
+      "attempts": 48,
+      "detected": 39,
+      "eligible_attempts": 32,
+      "eligible_detected": 32,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "fan_out",
+      "params": {
+        "min_counterparties": 8
+      },
+      "seconds": 2.1,
+      "alerts": 9391,
+      "alerts_on_laundering_accounts": 246,
+      "attempts": 48,
+      "detected": 25,
+      "eligible_attempts": 22,
+      "eligible_detected": 22,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "fan_out",
+      "params": {
+        "window_days": 3
+      },
+      "seconds": 2.1,
+      "alerts": 22756,
+      "alerts_on_laundering_accounts": 592,
+      "attempts": 48,
+      "detected": 27,
+      "eligible_attempts": 27,
+      "eligible_detected": 27,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "fan_in",
+      "params": {},
+      "seconds": 1.3,
+      "alerts": 12431,
+      "alerts_on_laundering_accounts": 770,
+      "attempts": 40,
+      "detected": 35,
+      "eligible_attempts": 26,
+      "eligible_detected": 26,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "fan_in",
+      "params": {
+        "min_counterparties": 3
+      },
+      "seconds": 2.5,
+      "alerts": 73150,
+      "alerts_on_laundering_accounts": 2573,
+      "attempts": 40,
+      "detected": 37,
+      "eligible_attempts": 31,
+      "eligible_detected": 31,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "fan_in",
+      "params": {
+        "min_counterparties": 8
+      },
+      "seconds": 1.2,
+      "alerts": 3987,
+      "alerts_on_laundering_accounts": 380,
+      "attempts": 40,
+      "detected": 24,
+      "eligible_attempts": 22,
+      "eligible_detected": 22,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "fan_in",
+      "params": {
+        "window_days": 3
+      },
+      "seconds": 1.6,
+      "alerts": 10344,
+      "alerts_on_laundering_accounts": 691,
+      "attempts": 40,
+      "detected": 31,
+      "eligible_attempts": 26,
+      "eligible_detected": 25,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "gather_scatter",
+      "params": {},
+      "seconds": 4.1,
+      "alerts": 12192,
+      "alerts_on_laundering_accounts": 610,
+      "attempts": 51,
+      "detected": 42,
+      "eligible_attempts": 27,
+      "eligible_detected": 27,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "gather_scatter",
+      "params": {
+        "min_senders": 2,
+        "min_receivers": 2
+      },
+      "seconds": 6.1,
+      "alerts": 57505,
+      "alerts_on_laundering_accounts": 1785,
+      "attempts": 51,
+      "detected": 49,
+      "eligible_attempts": 41,
+      "eligible_detected": 41,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "gather_scatter",
+      "params": {
+        "min_senders": 5,
+        "min_receivers": 5
+      },
+      "seconds": 3.5,
+      "alerts": 491,
+      "alerts_on_laundering_accounts": 79,
+      "attempts": 51,
+      "detected": 27,
+      "eligible_attempts": 22,
+      "eligible_detected": 22,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "gather_scatter",
+      "params": {
+        "window_days": 10
+      },
+      "seconds": 3.5,
+      "alerts": 13128,
+      "alerts_on_laundering_accounts": 681,
+      "attempts": 51,
+      "detected": 42,
+      "eligible_attempts": 27,
+      "eligible_detected": 27,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "scatter_gather",
+      "params": {},
+      "seconds": 31.6,
+      "alerts": 190,
+      "alerts_on_laundering_accounts": 38,
+      "attempts": 44,
+      "detected": 29,
+      "eligible_attempts": 30,
+      "eligible_detected": 29,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "scatter_gather",
+      "params": {
+        "min_intermediaries": 2
+      },
+      "seconds": 35.4,
+      "alerts": 6682,
+      "alerts_on_laundering_accounts": 2187,
+      "attempts": 44,
+      "detected": 31,
+      "eligible_attempts": 33,
+      "eligible_detected": 31,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "scatter_gather",
+      "params": {
+        "min_intermediaries": 5
+      },
+      "seconds": 31.1,
+      "alerts": 30,
+      "alerts_on_laundering_accounts": 26,
+      "attempts": 44,
+      "detected": 25,
+      "eligible_attempts": 26,
+      "eligible_detected": 25,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "scatter_gather",
+      "params": {
+        "max_degree": 200
+      },
+      "seconds": 32.0,
+      "alerts": 192,
+      "alerts_on_laundering_accounts": 40,
+      "attempts": 44,
+      "detected": 30,
+      "eligible_attempts": 30,
+      "eligible_detected": 30,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "cycle",
+      "params": {},
+      "seconds": 62.9,
+      "alerts": 3585,
+      "alerts_on_laundering_accounts": 381,
+      "attempts": 54,
+      "detected": 31,
+      "eligible_attempts": 34,
+      "eligible_detected": 31,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "cycle",
+      "params": {
+        "max_length": 4
+      },
+      "seconds": 30.3,
+      "alerts": 3561,
+      "alerts_on_laundering_accounts": 360,
+      "attempts": 54,
+      "detected": 28,
+      "eligible_attempts": 30,
+      "eligible_detected": 28,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "cycle",
+      "params": {
+        "max_length": 8
+      },
+      "seconds": 135.6,
+      "alerts": 3610,
+      "alerts_on_laundering_accounts": 402,
+      "attempts": 54,
+      "detected": 36,
+      "eligible_attempts": 43,
+      "eligible_detected": 36,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "cycle",
+      "params": {
+        "max_degree": 200
+      },
+      "seconds": 150.8,
+      "alerts": 3697,
+      "alerts_on_laundering_accounts": 413,
+      "attempts": 54,
+      "detected": 33,
+      "eligible_attempts": 34,
+      "eligible_detected": 33,
+      "base_rate": 0.01234158046780356
+    },
+    {
+      "pattern": "pass_through",
+      "params": {},
+      "seconds": 10.7,
+      "alerts": 14542,
+      "alerts_on_laundering_accounts": 353,
+      "attempts": null,
+      "detected": null,
+      "eligible_attempts": null,
+      "eligible_detected": null,
+      "base_rate": 0.01234158046780356
+    }
+  ]
+}

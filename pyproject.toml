@@ -1,0 +1,62 @@
+[project]
+name = "eqlx-aml"
+version = "0.1.0"
+description = "Deterministic money-laundering pattern detection on transfer data: fan-in/out, cycles, scatter-gather, pass-through, structuring. Read-only MCP server for AI agents."
+readme = "README.md"
+authors = [
+    { name = "Can Demir", email = "can.demir@eqlx.ai" }
+]
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["aml", "anti-money-laundering", "transaction monitoring", "fraud", "graph", "typologies", "compliance", "mcp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+mcp = [
+    "mcp>=2.3.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
+
+[project.scripts]
+aml = "eqlx_aml.cli:main"
+
+[project.urls]
+Homepage = "https://eqlx.org"
+Source = "https://github.com/eqlx-ai/eqlx-aml"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
+
+[tool.mypy]
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["mcp.*"]
+ignore_missing_imports = true

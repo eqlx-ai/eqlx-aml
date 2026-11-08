@@ -1,0 +1,16 @@
+name: New pattern
+description: Propose a laundering pattern or a monitoring rule.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Definition
+      description: The pattern as an exact rule (accounts, order in time, window, thresholds), and who needs it.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Public source
+      description: The typology report, guidance or paper that describes it.

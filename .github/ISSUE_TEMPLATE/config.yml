@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or collaboration
+    url: mailto:research@eqlx.ai
+    about: Write to the maintainers.

@@ -1,0 +1,5 @@
+eqlx-aml
+Copyright 2026 Can Demir (eqlx.ai)
+
+Pattern definitions follow public typology descriptions (FATF) and the public IBM AML synthetic data
+set (Altman et al., 2023). No third-party code or data is included; the IBM data is not redistributed.
